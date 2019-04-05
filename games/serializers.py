@@ -12,7 +12,7 @@ class GameSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Game
         depth = 1
-        fields = ('url', 'id', 'title', 'publisher', 'developer', 'owner',)
+        fields = ('url', 'id', 'title', 'publisher', 'developer', 'release', 'region', 'owner',)
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
