@@ -1,13 +1,13 @@
 # games/views.py
 from django.contrib.auth.models import User
-from rest_framework import generics, permissions, renderers, status
+from rest_framework import generics, permissions, renderers, status, viewsets
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
 
-from .models import Game
+from .models import Game, Publisher
 from .permissions import IsOwnerOrReadOnly
-from .serializers import GameSerializer, UserSerializer
+from .serializers import GameSerializer, UserSerializer, PublisherSerializer
 
 
 
@@ -15,7 +15,8 @@ from .serializers import GameSerializer, UserSerializer
 def api_root(request, format=None):
     return Response({
         'users': reverse('user-list', request=request, format=format),
-        'games': reverse('game-list', request=request, format=format)
+        'games': reverse('game-list', request=request, format=format),
+        'publisher': reverse('publisher-list', request=request, format=format),
     })
 
 
@@ -55,3 +56,22 @@ class UserList(generics.ListAPIView):
 class UserDetail(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+class PublisherList(generics.ListCreateAPIView):
+    queryset = Publisher.objects.all()
+    serializer_class = PublisherSerializer
+
+    def post(self, request):
+        data = request.data
+        if isinstance(data, list):
+            serializer = self.get_serializer(data=request.data, many=True)
+        else:
+            serializer = self.get_serializer(data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+

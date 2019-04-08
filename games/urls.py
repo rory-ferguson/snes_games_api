@@ -12,6 +12,7 @@ urlpatterns = [
     path('games/<int:pk>/', views.GameDetail.as_view(), name='game-detail'),
     path('users/', views.UserList.as_view(), name='user-list'),
     path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail'),
+    path('publisher/', views.PublisherList.as_view(), name='publisher-list'),
     path('', views.api_root),
 ]
 
