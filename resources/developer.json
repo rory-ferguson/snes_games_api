@@ -1,187 +1,557 @@
 [
-	{"developer": "A-Max"},
-	{"developer": "A.I. Company Ltd."},
-	{"developer": "Absolute Entertainment"},
-	{"developer": "Accolade"},
-	{"developer": "Alexandria"},
-	{"developer": "American Softworks"},
-	{"developer": "Anco"},
-	{"developer": "Arc Developments"},
-	{"developer": "Arcade Zone"},
-	{"developer": "Argonaut Games"},
-	{"developer": "Arsys Software"},
-	{"developer": "ASCII Entertainment"},
-	{"developer": "Atelier Double"},
-	{"developer": "Athena"},
-	{"developer": "Atlus"},
-	{"developer": "Atod"},
-	{"developer": "Audiogenic"},
-	{"developer": "Avalanche Software"},
-	{"developer": "Beam Software"},
-	{"developer": "Bitmap Brothers"},
-	{"developer": "Bitmasters"},
-	{"developer": "Bits Studios"},
-	{"developer": "Black Pearl Software"},
-	{"developer": "Black Pearl Software / Tiertex"},
-	{"developer": "Blizzard Entertainment"},
-	{"developer": "Blue Byte"},
-	{"developer": "Bullfrog Productions"},
-	{"developer": "C-Lab"},
-	{"developer": "Capcom"},
-	{"developer": "Codemasters"},
-	{"developer": "Compile"},
-	{"developer": "Compile/HAL Laboratory"},
-	{"developer": "Copya System"},
-	{"developer": "Core Design"},
-	{"developer": "Cryo Interactive"},
-	{"developer": "Data East"},
-	{"developer": "David Crane"},
-	{"developer": "Delphine Software International"},
-	{"developer": "Digital Eclipse Software"},
-	{"developer": "Distinctive Software"},
-	{"developer": "DMA Design"},
-	{"developer": "Domark"},
-	{"developer": "EA Canada"},
-	{"developer": "Electronic Arts"},
-	{"developer": "Empire Interactive"},
-	{"developer": "Empire Software"},
-	{"developer": "Entertainment International"},
-	{"developer": "Equilibrium"},
-	{"developer": "Eurocom"},
-	{"developer": "Eurocom Entertainment Software"},
-	{"developer": "Extended Play Productions"},
-	{"developer": "Extended Play Productions / Probe Entertainment"},
-	{"developer": "Factor 5"},
-	{"developer": "Flair Software"},
-	{"developer": "Funcom"},
-	{"developer": "Genki"},
-	{"developer": "Granite Bay Software"},
-	{"developer": "Gray Matter"},
-	{"developer": "Gremlin Interactive"},
-	{"developer": "HAL Laboratory"},
-	{"developer": "Herge"},
-	{"developer": "High Score Productions / Tiburon Entertainment"},
-	{"developer": "Hookstone Productions"},
-	{"developer": "Hori Electric"},
-	{"developer": "Hot-B"},
-	{"developer": "Hudson Soft"},
-	{"developer": "Human Entertainment"},
-	{"developer": "ICOM Simulations"},
-	{"developer": "Iguana Entertainment"},
-	{"developer": "Imagineer"},
-	{"developer": "Imagineering"},
-	{"developer": "Imagitec Design"},
-	{"developer": "Infogrames"},
-	{"developer": "Intelligent Systems"},
-	{"developer": "Interplay"},
-	{"developer": "Interplay Entertainment"},
-	{"developer": "Irem"},
-	{"developer": "Jaleco"},
-	{"developer": "Jorudan"},
-	{"developer": "Kalisto Entertainment"},
-	{"developer": "Kaneko"},
-	{"developer": "KaZe / Meldac"},
-	{"developer": "Kemco"},
-	{"developer": "Koei"},
-	{"developer": "Konami"},
-	{"developer": "Krisalis Software"},
-	{"developer": "Laser Beam Entertainment"},
-	{"developer": "Leland Interactive Media"},
-	{"developer": "Loriciel"},
-	{"developer": "LucasArts"},
-	{"developer": "Magical Company"},
-	{"developer": "Make Software"},
-	{"developer": "Malibu Games"},
-	{"developer": "Malibu Interactive"},
-	{"developer": "Manley & Associates"},
-	{"developer": "Masaya"},
-	{"developer": "MicroProse"},
-	{"developer": "Millennium Interactive"},
-	{"developer": "Minakuchi Engineering"},
-	{"developer": "Mindscape"},
-	{"developer": "Mirage / T&E Soft"},
-	{"developer": "Monolith Corporation"},
-	{"developer": "MotiveTime"},
-	{"developer": "Namco"},
-	{"developer": "Natsume"},
-	{"developer": "Neverland"},
-	{"developer": "New World Computing"},
-	{"developer": "Nintendo"},
-	{"developer": "Nintendo/Argonaut Games"},
-	{"developer": "Nintendo/Maxis"},
-	{"developer": "Nova Co., Ltd"},
-	{"developer": "Nova Games"},
-	{"developer": "Novotrade"},
-	{"developer": "Ocean Software"},
-	{"developer": "Opera House"},
-	{"developer": "Origin Systems"},
-	{"developer": "Pack-In-Video"},
-	{"developer": "Paramount Interactive"},
-	{"developer": "Park Place Productions"},
-	{"developer": "Phoenix Interactive Entertainment"},
-	{"developer": "Polygames"},
-	{"developer": "Probe Entertainment"},
-	{"developer": "Probe Software"},
-	{"developer": "Produce"},
-	{"developer": "Produce!"},
-	{"developer": "Psygnosis"},
-	{"developer": "Quintet"},
-	{"developer": "Radical Entertainment"},
-	{"developer": "Rage Software"},
-	{"developer": "Rage Software, Elite Systems"},
-	{"developer": "Rare"},
-	{"developer": "Realtime Associates"},
-	{"developer": "Red Entertainment"},
-	{"developer": "Red Rat Software"},
-	{"developer": "Redline Games"},
-	{"developer": "Riedel Software Productions"},
-	{"developer": "Sales Curve Interactive"},
-	{"developer": "Sculptured Software"},
-	{"developer": "Sensible Software"},
-	{"developer": "SETA"},
-	{"developer": "Shimada Kikaku"},
-	{"developer": "Shiny Entertainment"},
-	{"developer": "Silicon & Synapse"},
-	{"developer": "Silicon Sorcery"},
-	{"developer": "Software Creations"},
-	{"developer": "Software Creations (UK)"},
-	{"developer": "Software Heaven / FTL Games"},
-	{"developer": "Spidersoft"},
-	{"developer": "Square"},
-	{"developer": "Sting Entertainment"},
-	{"developer": "Sunsoft"},
-	{"developer": "Synergistic Software"},
-	{"developer": "System 3"},
-	{"developer": "T&E Software"},
-	{"developer": "Taito"},
-	{"developer": "Taito/Sol Corporation"},
-	{"developer": "Takara"},
-	{"developer": "Tamtex"},
-	{"developer": "Team17"},
-	{"developer": "Technōs Japan"},
-	{"developer": "Tecmo"},
-	{"developer": "Tengen"},
-	{"developer": "The Software Toolworks"},
-	{"developer": "THQ"},
-	{"developer": "Tiburon Entertainment"},
-	{"developer": "Tiertex Design Studios"},
-	{"developer": "Titus Software"},
-	{"developer": "Tokyo Shoseki"},
-	{"developer": "Tose"},
-	{"developer": "Toshiba EMI"},
-	{"developer": "Traveller's Tales"},
-	{"developer": "Twilight Games"},
-	{"developer": "U.S. Gold"},
-	{"developer": "Ukiyotei"},
-	{"developer": "Viacom New Media"},
-	{"developer": "Vic Tokai"},
-	{"developer": "Video System"},
-	{"developer": "Virgin Interactive"},
-	{"developer": "Visual Concepts"},
-	{"developer": "Visual Concepts / High Score Productions"},
-	{"developer": "Vivid Image"},
-	{"developer": "Western Technologies"},
-	{"developer": "Westwood Studios"},
-	{"developer": "World Builders Synergistic"},
-	{"developer": "Zeppelin Games"},
+	{
+		"developer": "A-Max"
+	},
+	{
+		"developer": "A.I. Company Ltd."
+	},
+	{
+		"developer": "Absolute Entertainment"
+	},
+	{
+		"developer": "Accolade"
+	},
+	{
+		"developer": "Alexandria"
+	},
+	{
+		"developer": "American Softworks"
+	},
+	{
+		"developer": "Anco"
+	},
+	{
+		"developer": "Arc Developments"
+	},
+	{
+		"developer": "Arcade Zone"
+	},
+	{
+		"developer": "Argonaut Games"
+	},
+	{
+		"developer": "Arsys Software"
+	},
+	{
+		"developer": "ASCII Entertainment"
+	},
+	{
+		"developer": "Atelier Double"
+	},
+	{
+		"developer": "Athena"
+	},
+	{
+		"developer": "Atlus"
+	},
+	{
+		"developer": "Atod"
+	},
+	{
+		"developer": "Audiogenic"
+	},
+	{
+		"developer": "Avalanche Software"
+	},
+	{
+		"developer": "Beam Software"
+	},
+	{
+		"developer": "Bitmap Brothers"
+	},
+	{
+		"developer": "Bitmasters"
+	},
+	{
+		"developer": "Bits Studios"
+	},
+	{
+		"developer": "Black Pearl Software"
+	},
+	{
+		"developer": "Black Pearl Software / Tiertex"
+	},
+	{
+		"developer": "Blizzard Entertainment"
+	},
+	{
+		"developer": "Blue Byte"
+	},
+	{
+		"developer": "Bullfrog Productions"
+	},
+	{
+		"developer": "C-Lab"
+	},
+	{
+		"developer": "Capcom"
+	},
+	{
+		"developer": "Codemasters"
+	},
+	{
+		"developer": "Compile"
+	},
+	{
+		"developer": "Compile/HAL Laboratory"
+	},
+	{
+		"developer": "Copya System"
+	},
+	{
+		"developer": "Core Design"
+	},
+	{
+		"developer": "Cryo Interactive"
+	},
+	{
+		"developer": "Data East"
+	},
+	{
+		"developer": "David Crane"
+	},
+	{
+		"developer": "Delphine Software International"
+	},
+	{
+		"developer": "Digital Eclipse Software"
+	},
+	{
+		"developer": "Distinctive Software"
+	},
+	{
+		"developer": "DMA Design"
+	},
+	{
+		"developer": "Domark"
+	},
+	{
+		"developer": "EA Canada"
+	},
+	{
+		"developer": "Electronic Arts"
+	},
+	{
+		"developer": "Empire Interactive"
+	},
+	{
+		"developer": "Empire Software"
+	},
+	{
+		"developer": "Entertainment International"
+	},
+	{
+		"developer": "Equilibrium"
+	},
+	{
+		"developer": "Eurocom"
+	},
+	{
+		"developer": "Eurocom Entertainment Software"
+	},
+	{
+		"developer": "Extended Play Productions"
+	},
+	{
+		"developer": "Extended Play Productions / Probe Entertainment"
+	},
+	{
+		"developer": "Factor 5"
+	},
+	{
+		"developer": "Flair Software"
+	},
+	{
+		"developer": "Funcom"
+	},
+	{
+		"developer": "Genki"
+	},
+	{
+		"developer": "Granite Bay Software"
+	},
+	{
+		"developer": "Gray Matter"
+	},
+	{
+		"developer": "Gremlin Interactive"
+	},
+	{
+		"developer": "HAL Laboratory"
+	},
+	{
+		"developer": "Herge"
+	},
+	{
+		"developer": "High Score Productions / Tiburon Entertainment"
+	},
+	{
+		"developer": "Hookstone Productions"
+	},
+	{
+		"developer": "Hori Electric"
+	},
+	{
+		"developer": "Hot-B"
+	},
+	{
+		"developer": "Hudson Soft"
+	},
+	{
+		"developer": "Human Entertainment"
+	},
+	{
+		"developer": "ICOM Simulations"
+	},
+	{
+		"developer": "Iguana Entertainment"
+	},
+	{
+		"developer": "Imagineer"
+	},
+	{
+		"developer": "Imagineering"
+	},
+	{
+		"developer": "Imagitec Design"
+	},
+	{
+		"developer": "Infogrames"
+	},
+	{
+		"developer": "Intelligent Systems"
+	},
+	{
+		"developer": "Interplay"
+	},
+	{
+		"developer": "Interplay Entertainment"
+	},
+	{
+		"developer": "Irem"
+	},
+	{
+		"developer": "Jaleco"
+	},
+	{
+		"developer": "Jorudan"
+	},
+	{
+		"developer": "Kalisto Entertainment"
+	},
+	{
+		"developer": "Kaneko"
+	},
+	{
+		"developer": "KaZe / Meldac"
+	},
+	{
+		"developer": "Kemco"
+	},
+	{
+		"developer": "Koei"
+	},
+	{
+		"developer": "Konami"
+	},
+	{
+		"developer": "Krisalis Software"
+	},
+	{
+		"developer": "Laser Beam Entertainment"
+	},
+	{
+		"developer": "Leland Interactive Media"
+	},
+	{
+		"developer": "Loriciel"
+	},
+	{
+		"developer": "LucasArts"
+	},
+	{
+		"developer": "Magical Company"
+	},
+	{
+		"developer": "Make Software"
+	},
+	{
+		"developer": "Malibu Games"
+	},
+	{
+		"developer": "Malibu Interactive"
+	},
+	{
+		"developer": "Manley & Associates"
+	},
+	{
+		"developer": "Masaya"
+	},
+	{
+		"developer": "MicroProse"
+	},
+	{
+		"developer": "Millennium Interactive"
+	},
+	{
+		"developer": "Minakuchi Engineering"
+	},
+	{
+		"developer": "Mindscape"
+	},
+	{
+		"developer": "Mirage / T&E Soft"
+	},
+	{
+		"developer": "Monolith Corporation"
+	},
+	{
+		"developer": "MotiveTime"
+	},
+	{
+		"developer": "Namco"
+	},
+	{
+		"developer": "Natsume"
+	},
+	{
+		"developer": "Neverland"
+	},
+	{
+		"developer": "New World Computing"
+	},
+	{
+		"developer": "Nintendo"
+	},
+	{
+		"developer": "Nintendo/Argonaut Games"
+	},
+	{
+		"developer": "Nintendo/Maxis"
+	},
+	{
+		"developer": "Nova Co., Ltd"
+	},
+	{
+		"developer": "Nova Games"
+	},
+	{
+		"developer": "Novotrade"
+	},
+	{
+		"developer": "Ocean Software"
+	},
+	{
+		"developer": "Opera House"
+	},
+	{
+		"developer": "Origin Systems"
+	},
+	{
+		"developer": "Pack-In-Video"
+	},
+	{
+		"developer": "Paramount Interactive"
+	},
+	{
+		"developer": "Park Place Productions"
+	},
+	{
+		"developer": "Phoenix Interactive Entertainment"
+	},
+	{
+		"developer": "Polygames"
+	},
+	{
+		"developer": "Probe Entertainment"
+	},
+	{
+		"developer": "Probe Software"
+	},
+	{
+		"developer": "Produce"
+	},
+	{
+		"developer": "Produce!"
+	},
+	{
+		"developer": "Psygnosis"
+	},
+	{
+		"developer": "Quintet"
+	},
+	{
+		"developer": "Radical Entertainment"
+	},
+	{
+		"developer": "Rage Software"
+	},
+	{
+		"developer": "Rage Software, Elite Systems"
+	},
+	{
+		"developer": "Rare"
+	},
+	{
+		"developer": "Realtime Associates"
+	},
+	{
+		"developer": "Red Entertainment"
+	},
+	{
+		"developer": "Red Rat Software"
+	},
+	{
+		"developer": "Redline Games"
+	},
+	{
+		"developer": "Riedel Software Productions"
+	},
+	{
+		"developer": "Sales Curve Interactive"
+	},
+	{
+		"developer": "Sculptured Software"
+	},
+	{
+		"developer": "Sensible Software"
+	},
+	{
+		"developer": "SETA"
+	},
+	{
+		"developer": "Shimada Kikaku"
+	},
+	{
+		"developer": "Shiny Entertainment"
+	},
+	{
+		"developer": "Silicon & Synapse"
+	},
+	{
+		"developer": "Silicon Sorcery"
+	},
+	{
+		"developer": "Software Creations"
+	},
+	{
+		"developer": "Software Creations (UK)"
+	},
+	{
+		"developer": "Software Heaven / FTL Games"
+	},
+	{
+		"developer": "Spidersoft"
+	},
+	{
+		"developer": "Square"
+	},
+	{
+		"developer": "Sting Entertainment"
+	},
+	{
+		"developer": "Sunsoft"
+	},
+	{
+		"developer": "Synergistic Software"
+	},
+	{
+		"developer": "System 3"
+	},
+	{
+		"developer": "T&E Software"
+	},
+	{
+		"developer": "Taito"
+	},
+	{
+		"developer": "Taito/Sol Corporation"
+	},
+	{
+		"developer": "Takara"
+	},
+	{
+		"developer": "Tamtex"
+	},
+	{
+		"developer": "Team17"
+	},
+	{
+		"developer": "Technōs Japan"
+	},
+	{
+		"developer": "Tecmo"
+	},
+	{
+		"developer": "Tengen"
+	},
+	{
+		"developer": "The Software Toolworks"
+	},
+	{
+		"developer": "THQ"
+	},
+	{
+		"developer": "Tiburon Entertainment"
+	},
+	{
+		"developer": "Tiertex Design Studios"
+	},
+	{
+		"developer": "Titus Software"
+	},
+	{
+		"developer": "Tokyo Shoseki"
+	},
+	{
+		"developer": "Tose"
+	},
+	{
+		"developer": "Toshiba EMI"
+	},
+	{
+		"developer": "Traveller's Tales"
+	},
+	{
+		"developer": "Twilight Games"
+	},
+	{
+		"developer": "U.S. Gold"
+	},
+	{
+		"developer": "Ukiyotei"
+	},
+	{
+		"developer": "Viacom New Media"
+	},
+	{
+		"developer": "Vic Tokai"
+	},
+	{
+		"developer": "Video System"
+	},
+	{
+		"developer": "Virgin Interactive"
+	},
+	{
+		"developer": "Visual Concepts"
+	},
+	{
+		"developer": "Visual Concepts / High Score Productions"
+	},
+	{
+		"developer": "Vivid Image"
+	},
+	{
+		"developer": "Western Technologies"
+	},
+	{
+		"developer": "Westwood Studios"
+	},
+	{
+		"developer": "World Builders Synergistic"
+	},
+	{
+		"developer": "Zeppelin Games"
+	}
 ]
