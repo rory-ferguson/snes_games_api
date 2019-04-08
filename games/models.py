@@ -18,6 +18,9 @@ class Developer(models.Model):
 class Publisher(models.Model):
     publisher = models.CharField(max_length=200)
 
+    class Meta:
+        ordering = ('publisher',)
+
     def __str__(self):
         return self.publisher
 
