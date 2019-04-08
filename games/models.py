@@ -11,6 +11,9 @@ REGIONS = (
 class Developer(models.Model):
     developer = models.CharField(max_length=200)
 
+    class Meta:
+        ordering = ('developer',)
+
     def __str__(self):
         return self.developer
 
@@ -35,7 +38,7 @@ class Game(models.Model):
     owner = models.ForeignKey('auth.User', related_name='games', on_delete=models.CASCADE)
 
     class Meta:
-        ordering = ('created',)
+        ordering = ('title',)
 
     def __str__(self):
         return self.title
