@@ -1,6 +1,12 @@
 # games/models.py
 from django.db import models
 
+YEARS = (
+    ("1991", "1991"), ("1992", "1992"), ("1993", "1993"), ("1994", "1994"), ("1995", "1995"), ("1996", "1996"), ("1997", "1997"),
+)
+REGIONS = (
+	("PAL", "PAL"), ("NTSC", "NTSC"),
+)
 
 class Developer(models.Model):
     developer = models.CharField(max_length=200)
@@ -21,6 +27,8 @@ class Game(models.Model):
     title = models.CharField(max_length=100, blank=True, default='')
     publisher = models.ForeignKey('Publisher', related_name='games', on_delete=models.CASCADE)
     developer = models.ForeignKey('Developer', related_name='games', on_delete=models.CASCADE)
+    release = models.CharField(max_length=4, choices=YEARS)
+    region = models.CharField(max_length=20, choices=REGIONS)
     owner = models.ForeignKey('auth.User', related_name='games', on_delete=models.CASCADE)
 
     class Meta:
