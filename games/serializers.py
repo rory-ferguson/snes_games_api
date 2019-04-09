@@ -29,3 +29,10 @@ class PublisherSerializer(serializers.ModelSerializer):
     class Meta:
         model = Publisher
         fields = ('publisher',)
+
+
+class DeveloperSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Developer
+        fields = ('developer',)
