@@ -14,9 +14,8 @@ from .serializers import GameSerializer, UserSerializer, PublisherSerializer, De
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': reverse('user-list', request=request, format=format),
-        'games': reverse('game-list', request=request, format=format),
         'developer': reverse('developer-list', request=request, format=format),
+        'games': reverse('game-list', request=request, format=format),
         'publisher': reverse('publisher-list', request=request, format=format),
     })
 
@@ -76,6 +75,10 @@ class PublisherList(generics.ListCreateAPIView):
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class PublisherDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Publisher.objects.all()
+    serializer_class = PublisherSerializer
+
 
 class DeveloperList(generics.ListCreateAPIView):
     queryset = Developer.objects.all()
@@ -93,3 +96,8 @@ class DeveloperList(generics.ListCreateAPIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class DeveloperDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Developer.objects.all()
+    serializer_class = DeveloperSerializer

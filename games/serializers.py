@@ -25,14 +25,18 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class PublisherSerializer(serializers.ModelSerializer):
+    games = serializers.SlugRelatedField(
+        many=True, slug_field='title', read_only=True)
 
     class Meta:
         model = Publisher
-        fields = ('publisher',)
+        fields = ('url', 'id', 'publisher', 'games')
 
 
 class DeveloperSerializer(serializers.ModelSerializer):
+    games = serializers.SlugRelatedField(
+        many=True, slug_field='title', read_only=True)
 
     class Meta:
         model = Developer
-        fields = ('developer',)
+        fields = ('url', 'id', 'developer', 'games')

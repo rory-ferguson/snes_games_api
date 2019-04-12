@@ -13,7 +13,9 @@ urlpatterns = [
     path('users/', views.UserList.as_view(), name='user-list'),
     path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail'),
     path('publisher/', views.PublisherList.as_view(), name='publisher-list'),
+    path('publisher/<int:pk>', views.PublisherDetail.as_view(), name='publisher-detail'),
     path('developer/', views.DeveloperList.as_view(), name='developer-list'),
+    path('developer/<int:pk>', views.DeveloperDetail.as_view(), name='developer-detail'),
     path('', views.api_root),
 ]
 
