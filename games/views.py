@@ -76,6 +76,10 @@ class PublisherList(generics.ListCreateAPIView):
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class PublisherDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Publisher.objects.all()
+    serializer_class = PublisherSerializer
+
 
 class DeveloperList(generics.ListCreateAPIView):
     queryset = Developer.objects.all()
@@ -93,3 +97,8 @@ class DeveloperList(generics.ListCreateAPIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class DeveloperDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Developer.objects.all()
+    serializer_class = DeveloperSerializer
