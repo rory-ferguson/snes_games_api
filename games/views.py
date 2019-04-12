@@ -14,9 +14,8 @@ from .serializers import GameSerializer, UserSerializer, PublisherSerializer, De
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': reverse('user-list', request=request, format=format),
-        'games': reverse('game-list', request=request, format=format),
         'developer': reverse('developer-list', request=request, format=format),
+        'games': reverse('game-list', request=request, format=format),
         'publisher': reverse('publisher-list', request=request, format=format),
     })
 
