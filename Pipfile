@@ -13,6 +13,7 @@ coreapi = "*"
 pyyaml = "*"
 coreapi-cli = "*"
 django-cors-headers = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
