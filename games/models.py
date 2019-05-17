@@ -1,6 +1,7 @@
 # games/models.py
 from django.db import models
 
+
 YEARS = (
     ("1991", "1991"), ("1992", "1992"), ("1993", "1993"), ("1994", "1994"), ("1995", "1995"), ("1996", "1996"), ("1997", "1997"), ("1998", "1998"), ("2017", "2017"),
 )
@@ -31,6 +32,7 @@ class Publisher(models.Model):
 
 class Game(models.Model):
     created = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='', default=None, null=True, blank=True)
     title = models.CharField(max_length=100, blank=True, default='')
     publisher = models.ForeignKey('Publisher', related_name='games', on_delete=models.CASCADE)
     developer = models.ForeignKey('Developer', related_name='games', on_delete=models.CASCADE)
