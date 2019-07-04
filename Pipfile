@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "*"
+django = "==2.2.3"
 djangorestframework = "*"
 pygments = "*"
 coreapi = "*"
@@ -14,6 +14,7 @@ pyyaml = "*"
 coreapi-cli = "*"
 django-cors-headers = "*"
 pillow = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.7"
