@@ -1,4 +1,3 @@
-# games/views.py
 from django.contrib.auth.models import User
 from rest_framework import generics, permissions, renderers, status, viewsets, filters
 from rest_framework.decorators import api_view
@@ -7,7 +6,7 @@ from rest_framework.reverse import reverse
 
 from .models import Game, Publisher, Developer
 from .permissions import IsOwnerOrReadOnly
-from .serializers import GameSerializer, UserSerializer, PublisherSerializer, DeveloperSerializer
+from .serializers import GameSerializer
 
 import django_filters
 from django_filters.rest_framework import DjangoFilterBackend
@@ -16,9 +15,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'developer': reverse('developer-list', request=request, format=format),
         'games': reverse('game-list', request=request, format=format),
-        'publisher': reverse('publisher-list', request=request, format=format),
     })
 
 
@@ -61,59 +58,3 @@ class GameList(generics.ListCreateAPIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-class UserList(generics.ListAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-
-class UserDetail(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-
-class PublisherList(generics.ListCreateAPIView):
-    queryset = Publisher.objects.all()
-    serializer_class = PublisherSerializer
-
-    def post(self, request):
-        data = request.data
-        if isinstance(data, list):
-            serializer = self.get_serializer(data=request.data, many=True)
-        else:
-            serializer = self.get_serializer(data=request.data)
-
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-class PublisherDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Publisher.objects.all()
-    serializer_class = PublisherSerializer
-
-
-class DeveloperList(generics.ListCreateAPIView):
-    queryset = Developer.objects.all()
-    serializer_class = DeveloperSerializer
-
-    def post(self, request):
-        data = request.data
-        if isinstance(data, list):
-            serializer = self.get_serializer(data=request.data, many=True)
-        else:
-            serializer = self.get_serializer(data=request.data)
-
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-class DeveloperDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Developer.objects.all()
-    serializer_class = DeveloperSerializer
