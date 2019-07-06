@@ -3,6 +3,7 @@ from rest_framework import generics, permissions, renderers, status, viewsets, f
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
+from rest_framework.views import APIView
 
 from .models import Game, Publisher, Developer
 from .permissions import IsOwnerOrReadOnly
@@ -13,10 +14,24 @@ from django_filters.rest_framework import DjangoFilterBackend
 
 
 @api_view(['GET'])
-def api_root(request, format=None):
+def api_root(request):
     return Response({
-        'games': reverse('game-list', request=request, format=format),
+        'games': reverse('game-list', request=request),
+        'publisher': reverse('publisher-list', request=request),
+        'developer': reverse('developer-list', request=request),
     })
+
+
+class PublisherList(APIView):
+    def get(self, request):
+        publishers = [i.publisher for i in Publisher.objects.all()]
+        return Response(publishers)
+
+
+class DeveloperList(APIView):
+    def get(self, request):
+        developers = [i.developer for i in Developer.objects.all()]
+        return Response(developers)
 
 
 class GameDetail(generics.RetrieveUpdateDestroyAPIView):

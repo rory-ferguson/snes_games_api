@@ -4,7 +4,6 @@ from games.models import Game, Publisher, Developer
 
 
 class GameSerializer(serializers.HyperlinkedModelSerializer):
-    # owner = serializers.ReadOnlyField(source='owner.username')
     publisher = serializers.SlugRelatedField(queryset=Publisher.objects.all(), slug_field='publisher')
     developer = serializers.SlugRelatedField(queryset=Developer.objects.all(), slug_field='developer')
 

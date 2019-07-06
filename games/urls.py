@@ -9,6 +9,8 @@ urlpatterns = [
     path('schema/', schema_view),
     path('games/', views.GameList.as_view(), name='game-list'),
     path('games/<int:pk>/', views.GameDetail.as_view(), name='game-detail'),
+    path('publishers/', views.PublisherList.as_view(), name='publisher-list'),
+    path('developers/', views.DeveloperList.as_view(), name='developer-list'),
     path('', views.api_root),
 ]
 
