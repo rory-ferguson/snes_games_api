@@ -19,7 +19,21 @@ def api_root(request):
         'games': reverse('game-list', request=request),
         'publisher': reverse('publisher-list', request=request),
         'developer': reverse('developer-list', request=request),
+        'release': reverse('release-list', request=request),
+        'title': reverse('title-list', request=request),
     })
+
+
+class TitleList(APIView):
+    def get(self, request):
+        title = sorted(list(set(Game.objects.values_list('title', flat=True))))
+        return Response(title)
+
+
+class ReleaseList(APIView):
+    def get(self, request):
+        release = sorted(list(set(Game.objects.values_list('release', flat=True))))
+        return Response(release)
 
 
 class PublisherList(APIView):
