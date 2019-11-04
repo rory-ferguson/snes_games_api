@@ -17,14 +17,14 @@ Includes
 
 **Django 2.2**
 
-**Pipenv** for a virtual environment
+**Pipenv** for the virtual environment
 
 ## Installation
 
     git clone
     pipenv install
     pipenv shell
-    python3 manage.py runserver
+    python3 manage.py runserver 127.0.0.1:8000
 
 ## How To
 
